@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Chatbot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="chat-container">
+        <h2>AI Chatbot</h2>
+        <div class="chat-box" id="chatBox">
+            {% if chat_history %}
+                {% for msg in chat_history %}
+                    {% if msg.sender == 'user' %}
+                        <div class="user-msg">{{ msg.text }}</div><br>
+                    {% else %}
+                        <div class="bot-msg">{{ msg.text }}</div><br>
+                    {% endif %}
+                {% endfor %}
+            {% endif %}
+        </div>
+
+        <form method="POST" class="input-area" onsubmit="return sendMessage()">
+            <input type="text" name="message" id="messageInput" placeholder="Type a message..." required>
+            <button type="button" onclick="startListening()">🎤</button>
+            <button type="submit">Send</button>
+        </form>
+
+        <form method="POST" action="/clear" style="margin-top: 10px; text-align: center;">
+            <button type="submit" class="clear-btn">Clear Chat</button>
+        </form>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

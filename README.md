@@ -1,2 +1,23 @@
-# Wikibot-AI
-Wikibot AI is a simple and interactive chatbot built using Flask (Python) that responds to user queries with:  Predefined answers for FAQs (e.g. greetings, jokes, bot info)  Real-time Wikipedia summaries for general knowledge. Voice input support via the Web Speech API. Smooth and responsive UI using HTML, CSS, and JavaScript
+Wikibot AI – Flask Chatbot with Wikipedia Integration
+
+Wikibot AI is a lightweight and interactive chatbot built using Python and Flask. It answers user queries through either predefined responses or dynamic summaries retrieved from Wikipedia. The application also includes voice input support using the Web Speech API for a more accessible user experience.
+
+## Features:
+
+- Interactive text-based conversation interface
+- Real-time answers powered by Wikipedia API
+- Voice input functionality (supported in modern browsers)
+- Responsive and clean user interface with CSS animations
+- Developed using Flask, HTML, CSS, and JavaScript
+
+
+
+## Installation
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/zeeshanmemon/wikibot-ai.git
+cd wikibot-ai
+
+
