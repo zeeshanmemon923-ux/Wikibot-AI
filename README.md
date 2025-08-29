@@ -18,7 +18,8 @@ Wikibot AI is a lightweight and interactive chatbot built using Python and Flask
 
 ```bash
 git clone https://github.com/zeeshanmemon923-ux/Wikibot-AI
-cd wikibot-AI
+cd Wikibot-AI
+
 
 
 
